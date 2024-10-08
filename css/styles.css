@@ -39,7 +39,18 @@ header a {
 .nav-bar a.activehome {
 color: #6fc4bd;
 }
-
+.nav-bar a.activeabout {
+    color: #6fc4bd;
+    }
+.nav-bar a.activeservice {
+color: #6fc4bd;
+}
+.nav-bar a.activeteam {
+    color: #6fc4bd;
+    }
+.nav-bar a.activecontact {
+color: #6fc4bd;
+}
 main {
     flex: 1; 
     background-color: #000;
@@ -163,5 +174,42 @@ justify-content: center;
     border: none;
     text-decoration: none;
     color: #000;
+}
 
+.col2 h2, .col2 h3{
+    color: #fff;
+    max-width: 250px;
+    margin-bottom: 15px;
+}
+
+.section2-about{
+display: flex;
+margin: 100px 0px 100px 0px;
+gap: 40px;
+justify-content: center;
+
+}
+
+.col01, .col02, .col03{
+    display: flex;
+    width: 289px;
+    height: 151px;
+background-color: #6fc4bd;
+border-radius: 41px;
+align-items: center;
+
+}
+
+.col01 img, .col02 img, .col03 img{
+    width: 73px;
+    height: 67px;
+background-color: #6fc4bd;
+border-radius: 41px;
+
+}
+
+.col-content{
+    margin-left: 5px;
+    display: flex;
+    flex-direction: column;
 }
