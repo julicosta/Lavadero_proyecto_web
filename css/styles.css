@@ -310,3 +310,21 @@ border-radius: 41px;
     width: 507px;
     height: 236px;
 }
+
+.team-img-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    gap: 10px;
+    padding: 20px;
+
+}
+
+.team-img-grid img{
+    width: 73px;
+    height: 67px;
+    border-radius: 41px;
+    border: none;
+}
+
+
+
