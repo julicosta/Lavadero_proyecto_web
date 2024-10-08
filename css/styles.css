@@ -32,8 +32,12 @@ header img {
 
 header a {
     text-decoration: none;
-    color: #6fc4bd;
+    color: #fff;
     cursor: pointer;
+}
+
+.nav-bar a.activehome {
+color: #6fc4bd;
 }
 
 main {
