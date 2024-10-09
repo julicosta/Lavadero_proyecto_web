@@ -326,5 +326,9 @@ border-radius: 41px;
     border: none;
 }
 
+.row-section1{
+    display: flex;
+    color: #fff;
+}
 
 
