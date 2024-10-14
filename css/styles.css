@@ -214,7 +214,7 @@ border-radius: 41px;
     flex-direction: column;
 }
 
-.services-grid {
+/* .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     grid-template-rows: repeat(3, auto);
@@ -224,14 +224,27 @@ border-radius: 41px;
     "tire-chassis-decontamination premium-detailing premium-detailing";
     gap: 20px;
     padding: 20px;
+} */
+
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+        "basic-wash interior-detailing express-car-wash"
+        "complete-wash paint-treatment exterior-detailing"
+        "tire-chassis-decontamination premium-detailing premium-detailing";
+    gap: 20px;
+    padding: 20px;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .service-item {
-    background-color: #2e2d2d; 
+    max-width: 80%;
+    /* background-color: #2e2d2d;  */
+    border-top: 2px solid #fff;
     color: #fff; 
-    padding: 20px; 
-    border-radius: 8px;
-
 }
 
 .service-item h3 {
@@ -336,6 +349,74 @@ border-radius: 41px;
     display: flex;
     color: #fff;
     justify-content: center;
+    margin-top: 10px;
 
 }
 
+.row-section1{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin: 20px 0 20px 0;
+}
+
+.col-izq{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.col-izq-wpp{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.col-izq-wpp i{
+    color: #6fc4bd;
+    font-size: 40px;
+}
+
+.col-izq-mail{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.col-izq-mail i{
+    color: #6fc4bd;
+    font-size: 40px;
+}
+
+.card{
+    background-color: #6fc4bd;
+    padding: 50px 20px 50px 20px;
+    border-radius: 8px;
+}
+
+.book-row2{
+    display: flex;
+    gap: 30px;
+}
+
+.book-row3{
+    display: flex;
+    gap: 30px;
+}
+
+.book-row4{
+    display: flex;
+    flex-direction: column;
+    max-width: 363px;
+}
+
+.book-row4 textarea{
+    min-width: 363px;
+    max-width: 363px;
+    min-height: 50px;
+    max-height: 100px;
+}
+
+.book-row4 button{
+    margin-top: 10px;
+}
