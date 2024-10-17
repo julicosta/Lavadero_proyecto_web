@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body{
@@ -169,7 +170,7 @@ justify-content: center;
     justify-content: center;
     width: 100px;
     padding: 3px;
-    border-radius: 8px;
+    border-radius: .35rem;
     cursor: pointer;
     border: none;
     text-decoration: none;
@@ -214,7 +215,7 @@ justify-content: space-around;
   width: 73px;
   height: 67px;
   background-color: #6fc4bd;
-  border-radius: 41px;
+  border-radius: .35rem;
 }
 
 .col-content {
@@ -398,19 +399,51 @@ justify-content: space-around;
 }
 
 .card{
+    display: flex;
+    flex-direction: column;
     background-color: #6fc4bd;
     padding: 50px 20px 50px 20px;
-    border-radius: 8px;
+    border-radius: .35rem;
+    align-items: center;
+}
+
+.card input[type="text"]{
+    padding: 3px;
+    border: #000 solid 1px;
+    border-radius: .20rem;
+}
+
+.cont-date input[type="date"]{
+    width: 167px;
+    padding: 3px;
+    border: #000 solid 1px;
+    border-radius: .20rem;
+}
+
+.book-row4 textarea{
+    min-width: 363px;
+    max-width: 363px;
+    min-height: 50px;
+    max-height: 100px;
+    border: #000 solid 1px;
+    border-radius: .20rem;
+
+}
+
+.book-row1{
+    margin-bottom: 20px;
 }
 
 .book-row2{
     display: flex;
     gap: 30px;
+    margin-bottom: 10px;
 }
 
 .book-row3{
     display: flex;
     gap: 30px;
+    margin-bottom: 10px;
 }
 
 .book-row4{
@@ -419,13 +452,28 @@ justify-content: space-around;
     max-width: 363px;
 }
 
-.book-row4 textarea{
-    min-width: 363px;
-    max-width: 363px;
-    min-height: 50px;
-    max-height: 100px;
+.cont-date{
+    width: 100%;
 }
+
 
 .book-row4 button{
     margin-top: 10px;
+    padding: 8px;
+    width: 200px;
+    border: #000 solid 1px;
+    border-radius: .35rem;
+}
+.row4-button{
+    display: flex;
+    justify-content: center;
+}
+
+.video{
+    max-width: 70%;
+    margin: 40px auto;
+}
+
+.video img{
+    border-radius: .35rem;
 }
