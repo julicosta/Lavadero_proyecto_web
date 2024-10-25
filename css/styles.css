@@ -137,8 +137,8 @@ footer {
 .section1 img, .section2 img {
     margin: 30px 30px 10px;
     object-fit: cover;
-    width: 34.375rem;
-    height: 20.0625rem;
+    max-width: 34.375rem;
+    max-height: 20.0625rem;
 }           
 
 .section2{
@@ -483,4 +483,25 @@ justify-content: center;
 
 .video img{
     border-radius: .35rem;
+}
+
+@media screen and (max-width: 800px) {
+.section1{
+    flex-direction: column;
+}
+.section2{
+    flex-direction: column;
+}
+.col2{
+    margin-top: 10px;
+}
+.col2 p{
+    max-width: 320px;
+}
+.col3{
+    margin-top: 10px;
+}
+.col3 p{
+    max-width: 345px;
+}
 }
