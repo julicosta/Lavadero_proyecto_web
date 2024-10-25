@@ -139,14 +139,14 @@ footer {
     object-fit: cover;
     width: 34.375rem;
     height: 20.0625rem;
-}
+}           
 
 .section2{
 margin-bottom: 30px;
 }
 
 
-.section1, .section2 {
+.section1, .section2 {   
 display: flex;
 align-items: center;
 justify-content: center;
@@ -154,7 +154,7 @@ justify-content: center;
 
 .col2 p, .col3 p{
     color: #fff;
-    max-width: 250px;
+    max-width: 290px;
     margin-bottom: 20px;
 }
 
@@ -184,11 +184,11 @@ justify-content: center;
 }
 
 .section2-about{
-display: flex;
-margin: 100px 0px 100px 0px;
-gap: 50px;
-justify-content: space-around;
-
+    display: flex;
+    margin: 100px auto;
+    gap: 40px;
+    justify-content: space-around;
+    max-width: 68%;
 }
 
 .cols h4 {
@@ -249,7 +249,7 @@ justify-content: space-around;
         "tire-chassis-decontamination premium-detailing premium-detailing";
     gap: 20px;
     padding: 20px;
-    max-width: 80%;
+    max-width: 68%;
     margin: 0 auto;
 }
 
@@ -308,7 +308,7 @@ justify-content: space-around;
 
 .container-row-img-services{
     margin: 40px auto;
-    max-width: 80%;
+    max-width: 68%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -318,7 +318,7 @@ justify-content: space-around;
 .service-img-grid{
     display: grid;
     grid-template-columns: 1fr 1fr; 
-    gap: 50px;
+    gap: 40px;
 
 }
 
@@ -337,12 +337,13 @@ justify-content: space-around;
 }
 
 .team-img-grid{
+    max-width: 68%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
     place-items: center;
-    margin-top: 20px;
+    margin: 20px auto;
 }
 
 .team-img-grid img{
@@ -355,10 +356,10 @@ justify-content: space-around;
 .row-section1{
     display: flex;
     color: #fff;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: start;
     margin: 40px auto;
-    max-width: 80%;
+    max-width: 68%;
 }
 
 .person p{
@@ -402,36 +403,41 @@ justify-content: space-around;
     display: flex;
     flex-direction: column;
     background-color: #6fc4bd;
-    padding: 50px 20px 50px 20px;
+    padding: 25px 10px 25px 10px;
     border-radius: .35rem;
     align-items: center;
 }
 
 .card input[type="text"]{
-    padding: 3px;
-    border: #000 solid 1px;
-    border-radius: .20rem;
+    border: none;
+    background: none;
+    border-bottom: solid 0.5px #000;
 }
 
 .cont-date input[type="date"]{
     width: 167px;
-    padding: 3px;
-    border: #000 solid 1px;
-    border-radius: .20rem;
+    border: none;
+    border-bottom: solid 0.5px #000;
+    background: none;
 }
 
 .book-row4 textarea{
     min-width: 363px;
     max-width: 363px;
-    min-height: 50px;
+    min-height: 20px;
     max-height: 100px;
-    border: #000 solid 1px;
-    border-radius: .20rem;
+    border: none;
+    background: none;
+    border-bottom: solid 1px #000;
 
 }
 
 .book-row1{
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .book-row2{
@@ -467,10 +473,11 @@ justify-content: space-around;
 .row4-button{
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
 
 .video{
-    max-width: 70%;
+    max-width: 68%;
     margin: 40px auto;
 }
 
