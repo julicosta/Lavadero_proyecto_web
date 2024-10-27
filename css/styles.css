@@ -9,6 +9,8 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
+    width: 100%; 
+
 }
 
 header {
@@ -137,6 +139,7 @@ footer {
 .section1 img, .section2 img {
     margin: 30px 30px 10px;
     object-fit: cover;
+    width: 100%;
     max-width: 34.375rem;
     max-height: 20.0625rem;
 }           
@@ -485,6 +488,10 @@ justify-content: center;
     border-radius: .35rem;
 }
 
+.menu-toggle {
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
 .section1{
     flex-direction: column;
@@ -504,4 +511,100 @@ justify-content: center;
 .col3 p{
     max-width: 345px;
 }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .section1 img,
+    .section2 img{
+        max-width: 90%;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        height: auto;
+    }
+
+    .logo-footer {
+        position: static;
+        transform: none;
+        margin-bottom: 20px;
+    }
+
+    .redes-footer {
+        position: static;
+        transform: none;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footer-container img[alt="fondo-footer"] {
+        display: none;
+    }
+
+    .footer-container img[alt="logo-footer"] {
+        width: 6rem;
+        height: auto;
+    }
+
+    .redes-footer i {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+        position: relative;
+        z-index: 1000;
+    }
+
+    .nav-bar {
+        position: static;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    #menu-items {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: black;
+        width: 100%;
+        max-width: 100px;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    #menu-items.show {
+        display: block;
+    }
+
+    #menu-items li {
+        margin-bottom: 0.5rem;
+    }
+
+    #menu-items a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 0.5rem 0;
+    }
+
+    main {
+        position: relative;
+        z-index: 1;
+    }
 }
