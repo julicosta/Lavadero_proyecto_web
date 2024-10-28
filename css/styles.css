@@ -429,6 +429,8 @@ justify-content: center;
     max-width: 363px;
     min-height: 20px;
     max-height: 100px;
+    height: 20px;
+    
     border: none;
     background: none;
     border-bottom: solid 1px #000;
@@ -615,10 +617,6 @@ justify-content: center;
      justify-content: center;
      align-items: center;   
     }
-    .col2{
-        align-items: center;
-    }
-
 }
 
 @media screen and (max-width: 410px){
@@ -636,5 +634,10 @@ justify-content: center;
     }
     .cols h4{
         font-size: 16px;
+    }
+}
+@media screen and (max-width: 800px){
+    .col2{
+        align-items: center;
     }
 }
