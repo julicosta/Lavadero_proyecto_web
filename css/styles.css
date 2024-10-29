@@ -9,8 +9,8 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh; 
-    width: 100%; 
-
+    width: 100%;
+    margin: 0;
 }
 
 header {
@@ -37,6 +37,14 @@ header a {
     text-decoration: none;
     color: #fff;
     cursor: pointer;
+}
+
+.container-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 68%;
 }
 
 .nav-bar a.activehome {
@@ -88,6 +96,8 @@ main img {
 }
 
 footer {
+    margin: 0;
+    padding: 0px;
     width: 100%; 
     background-color: #000; 
 }
@@ -354,7 +364,26 @@ justify-content: center;
     height: 150px;
     border-radius: 50%;
     border: none;
+    transition: 0.3s;
 }
+
+.team-img-grid img:hover{
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 
+    0 0 15px rgba(255, 255, 255, 0.8),  
+    0 0 30px rgba(255, 255, 255, 0.5),   
+    0 0 45px rgba(255, 255, 255, 0.3);
+}
+
+.team-img-grid .person p{
+    transition: font-size 0.3s ease;
+}
+
+.team-img-grid .person img:hover + p {
+    font-size: 20px;
+}
+
+
 
 .row-section1{
     display: flex;
@@ -370,7 +399,6 @@ justify-content: center;
     color: #fff;
     justify-content: center;
     margin-top: 10px;
-
 }
 
 
@@ -615,7 +643,7 @@ justify-content: center;
     .section2-about{
      flex-direction: column;
      justify-content: center;
-     align-items: center;   
+     align-items: center;  
     }
 }
 
